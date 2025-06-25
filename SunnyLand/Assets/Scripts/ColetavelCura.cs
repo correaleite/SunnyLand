@@ -9,18 +9,19 @@ public class ColetavelCura : MonoBehaviour
     public TMP_Text texto_vidas;
     public ParticleSystem efeitoC;
     public GameManager gameManager;
-    int vidas = 0;
-    private bool foiColetado = false;
+   
+
     private void OnTriggerEnter2D(Collider2D outro)
     {
         if (outro.CompareTag("Player"))
         {
-            if (foiColetado) return;
-            foiColetado = true;
+            if (gameManager.vidas > 4) {
+                return;
+            } else { 
             gameManager.Heal(1);
             Instantiate(efeitoC, transform.position, Quaternion.identity);
-            Destroy(gameObject);
-
+           
+            }
         }
     }
 

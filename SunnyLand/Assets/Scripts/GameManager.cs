@@ -6,7 +6,7 @@ using UnityEngine;
 public class GameManager : MonoBehaviour
 {
     // Start is called before the first frame update
-    int vidas = 0;
+    public int vidas = 1;
     public TMP_Text texto_vidas;
     public ParticleSystem efeitoC;
     public ParticleSystem efeitoD;

@@ -8,7 +8,7 @@ public class Collectable : MonoBehaviour
     public TMP_Text texto_pontos;
     public ParticleSystem efeitoP;
 public GameManager gameManager;
-    int pontos = 0;
+
     private bool foiColetado = false;
 
 
