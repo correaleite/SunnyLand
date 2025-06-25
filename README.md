@@ -1,2 +1,2 @@
 # 2SunnyLand
-Projeto para a aula da FIAP School
+Feito por Ryu R., Pedro L. e Gabriel C.
